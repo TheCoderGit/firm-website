@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/public/lawyer logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- font from font share website-->
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3047e46638.js" crossorigin="anonymous"></script>
+  <title>International Law Firm</title>
+
+      <!-- update the version number as needed -->
+      <script defer src="/__/firebase/10.10.0/firebase-app-compat.js"></script>
+      <!-- include only the Firebase features as you need -->
+      <script defer src="/__/firebase/10.10.0/firebase-auth-compat.js"></script>
+      <script defer src="/__/firebase/10.10.0/firebase-database-compat.js"></script>
+      <script defer src="/__/firebase/10.10.0/firebase-firestore-compat.js"></script>
+      <script defer src="/__/firebase/10.10.0/firebase-functions-compat.js"></script>
+      <script defer src="/__/firebase/10.10.0/firebase-messaging-compat.js"></script>
+      <script defer src="/__/firebase/10.10.0/firebase-storage-compat.js"></script>
+      <script defer src="/__/firebase/10.10.0/firebase-analytics-compat.js"></script>
+      <script defer src="/__/firebase/10.10.0/firebase-remote-config-compat.js"></script>
+      <script defer src="/__/firebase/10.10.0/firebase-performance-compat.js"></script>
+      <script defer src="/public/js/navbar.js"></script>
+      <!-- 
+        initialize the SDK after all desired features are loaded, set useEmulator to false
+        to avoid connecting the SDK to running emulators.
+      -->
+      <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+      <link rel="stylesheet" href="styles/style.css">
+      <link rel="stylesheet" href="styles/utils.css">
+      <link rel="stylesheet" href="styles/component/hero.css">
+      <link rel="stylesheet" href="styles/component/header.css">
+      <link rel="stylesheet" href="styles/component/mobile-nav.css">
+      <link rel="stylesheet" href="styles/component/footer.css">
+      <link rel="stylesheet" href="styles//modern-normalize.css">
+
+      <script src="/public/src/utils/dark-mode.js"></script>
+      <script src="/public/src/utils/mobile-nav.js"></script>
+      <script src="/public/src/utils/dark-mode.js"></script>
+      <script src="/src/script.js"></script>
+
+</head>
+
+<body>
+  <header class="header container">
+    <nav>
+      <ul class="header__menu">
+        <li class="header__link"><a href="#">Home</a></li>
+        <li class="header__link"><a href="../our-team.html">our team</a></li>
+        <li class="header__link"><a href="../practice-area.html">areas</a></li>
+        <li class="header__line"></li>
+        <li><button id="theme-toggle" class="header__sun" onclick="darkMode()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+            </svg>
+
+          </button></li>
+      </ul>
+      <button class="header__bars" onclick="mobileNav()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+            clip-rule="evenodd" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav">
+    <nav>
+      <ul class="mobile-nav__menu">
+        <li>
+          <a class="mobile-nav__link" href="/index.html">HOME</a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="/practice-area.html">PRACTIC AREAS</a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="/our-team.html">OUR TEAM</a>
+        </li>
+        <li class="mobile-nav_link-line"></li>
+        <li><button id="theme-toggle" class="mobile-nav__sun" onclick="darkMode()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+            </svg>
+
+          </button></li>
+      </ul>
+
+      </ul>
+    </nav>
+  </div>
+  <!-- End of Mobile Navigation -->
+  <main>
+    <section class="hero container section">
+      <img class="hero__img" src="/public/lawyer logo.png" alt="internationa law firm">
+      <h2 class="hero__subtitle">Hesham Salem</h2>
+      <h1 class="hero__title">international <br> law firm</h1>
+      <p class="hero__desc">We have built a multi‐operational law firm to deal with a wide range of cases. With many
+        years of combined experience, we are well equipped to handle many matters. We cover criminal law, commercial
+        law, Civil low, family law, immigration , international cases and Property Advisor.
+
+        We take pride in our work and always go above and beyond to satisfy our clients, no matter the area of law.
+
+        Our team is equipped to address your goals professionally in ever‐changing environments and regulations.</p>
+
+    </section>
+  </main>
+  <footer>
+    <div class="footer-box">
+      <div class="footer-area-top">
+
+        <h3 class="title-bar-footer">
+          GET IN TOUCH
+        </h3>
+        <ul class="corporate-address">
+          <li>
+            <i class="fa fa-phone icon_footer" aria-hidden="true"></i>
+            <p>Phone : + (202) 00000000 +(202) 00000000</p>
+          </li>
+          <li>
+            <i class="fa fa-phone icon_footer" aria-hidden="true"></i>
+            <p>Mob: + (20) 1091262697</p>
+          </li>
+          <li>
+            <i class="fa fa-envelope-o icon_footer" aria-hidden="true"></i>
+            <p>info@international-law-firm.com</p>
+          </li>
+          <li>
+            <i class="fa fa-map-marker icon_footer" aria-hidden="true"></i>
+            <p>
+              (Head quarter) Gamet El Dewal, Mohandseen, Cairo.
+            </p>
+          </li>
+        </ul>
+
+      </div>
+      <div class="footer-area-bottom">
+
+        <p>@ 2024 International Law Firm. All rights reserved. Designed by <a href="">Ahmed Salem</a>
+        </p>
+
+      </div>
+    </div>
+  </footer>
+  <a id="phone_call" href="tel:+ (20) 1091262697" target="_blank">
+    <i class="fa fa-phone phone_icon"></i>
+    <span>+ (20) 1091262697</span>
+</a>
+<a id="whatsapp_call" href="https://api.whatsapp.com/send?phone=+%20(20)%201091262697&amp;text=Welcome"
+    target="_blank">
+    <i class="fa fa-whatsapp"></i>
+</a>
+<a id="send_mail" href="mailto:info@international-law-firm.com" target="_blank">
+    <i class="fa fa-envelope-o"></i>
+    <span>info@international-law-firm.com</span>
+</a>
+  <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
