@@ -3,53 +3,61 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/public/lawyer logo.png" />
+  <link rel="icon" type="image/svg+xml" href="./src/img/lawyer logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- font from font share website-->
   <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/3047e46638.js" crossorigin="anonymous"></script>
-  <title>International Law Firm</title>
 
-      <!-- update the version number as needed -->
-      <script defer src="/__/firebase/10.10.0/firebase-app-compat.js"></script>
-      <!-- include only the Firebase features as you need -->
-      <script defer src="/__/firebase/10.10.0/firebase-auth-compat.js"></script>
-      <script defer src="/__/firebase/10.10.0/firebase-database-compat.js"></script>
-      <script defer src="/__/firebase/10.10.0/firebase-firestore-compat.js"></script>
-      <script defer src="/__/firebase/10.10.0/firebase-functions-compat.js"></script>
-      <script defer src="/__/firebase/10.10.0/firebase-messaging-compat.js"></script>
-      <script defer src="/__/firebase/10.10.0/firebase-storage-compat.js"></script>
-      <script defer src="/__/firebase/10.10.0/firebase-analytics-compat.js"></script>
-      <script defer src="/__/firebase/10.10.0/firebase-remote-config-compat.js"></script>
-      <script defer src="/__/firebase/10.10.0/firebase-performance-compat.js"></script>
-      <script defer src="/public/js/navbar.js"></script>
-      <!-- 
+  <!-- fontawseome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="https://kit.fontawesome.com/3047e46638.js" crossorigin="anonymous"></script>
+
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/10.10.0/firebase-app-compat.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/10.10.0/firebase-auth-compat.js"></script>
+  <script defer src="/__/firebase/10.10.0/firebase-database-compat.js"></script>
+  <script defer src="/__/firebase/10.10.0/firebase-firestore-compat.js"></script>
+  <script defer src="/__/firebase/10.10.0/firebase-functions-compat.js"></script>
+  <script defer src="/__/firebase/10.10.0/firebase-messaging-compat.js"></script>
+  <script defer src="/__/firebase/10.10.0/firebase-storage-compat.js"></script>
+  <script defer src="/__/firebase/10.10.0/firebase-analytics-compat.js"></script>
+  <script defer src="/__/firebase/10.10.0/firebase-remote-config-compat.js"></script>
+  <script defer src="/__/firebase/10.10.0/firebase-performance-compat.js"></script>
+
+  <!-- 
         initialize the SDK after all desired features are loaded, set useEmulator to false
         to avoid connecting the SDK to running emulators.
       -->
-      <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-      <link rel="stylesheet" href="styles/style.css">
-      <link rel="stylesheet" href="styles/utils.css">
-      <link rel="stylesheet" href="styles/component/hero.css">
-      <link rel="stylesheet" href="styles/component/header.css">
-      <link rel="stylesheet" href="styles/component/mobile-nav.css">
-      <link rel="stylesheet" href="styles/component/footer.css">
-      <link rel="stylesheet" href="styles//modern-normalize.css">
+  <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
-      <script src="/public/src/utils/dark-mode.js"></script>
-      <script src="/public/src/utils/mobile-nav.js"></script>
-      <script src="/public/src/utils/dark-mode.js"></script>
-      <script src="/src/script.js"></script>
+  <!-- general styles -->
+  <link rel="stylesheet" href="./src/styles/style.css">
+  <link rel="stylesheet" href="./src/styles/home-page.css">
 
+  <!-- component style -->
+  <!-- <link rel="stylesheet" href="./src/styles/component/header.css"> -->
+  <!-- <link rel="stylesheet" href="./src/styles/component/mobile-nav.css"> -->
+  <!-- <link rel="stylesheet" href="./src/styles//modern-normalize.css"> -->
+
+  <script src="./src/script.js"></script>
+  <title>International Law Firm</title>
 </head>
 
 <body>
-  <header class="header container">
+  <header>
+    <a href="#" class="logo"><img src="./src/img/lawyer-logo-gold-white.png" alt="International Law Firm"></a>
+    <nav class="navigation-area">
+      <a href="#" class="navigaton-item-home active">Home</a>
+      <a href="./src/pages/our-team.html" class="navigaton-item-home ">our team</a>
+    </nav>
+  </header>
+  <!-- <header class="header container">
     <nav>
       <ul class="header__menu">
         <li class="header__link"><a href="#">Home</a></li>
-        <li class="header__link"><a href="../our-team.html">our team</a></li>
-        <li class="header__link"><a href="../practice-area.html">areas</a></li>
+        <li class="header__link"><a href="./src/pages/our-team.html">our team</a></li>
+        <li class="header__link"><a href="./src/pages/practice-area.html">areas</a></li>
         <li class="header__line"></li>
         <li><button id="theme-toggle" class="header__sun" onclick="darkMode()">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -68,19 +76,20 @@
         </svg>
       </button>
     </nav>
-  </header>
+  </header> -->
   <!-- Mobile Navigation -->
-  <div class="mobile-nav">
+
+  <!-- <div class="mobile-nav">
     <nav>
       <ul class="mobile-nav__menu">
         <li>
-          <a class="mobile-nav__link" href="/index.html">HOME</a>
+          <a class="mobile-nav__link" href="#">HOME</a>
         </li>
         <li>
-          <a class="mobile-nav__link" href="/practice-area.html">PRACTIC AREAS</a>
+          <a class="mobile-nav__link" href="./src/pages/practice-area.html">PRACTIC AREAS</a>
         </li>
         <li>
-          <a class="mobile-nav__link" href="/our-team.html">OUR TEAM</a>
+          <a class="mobile-nav__link" href="./src/pages/our-team.html">OUR TEAM</a>
         </li>
         <li class="mobile-nav_link-line"></li>
         <li><button id="theme-toggle" class="mobile-nav__sun" onclick="darkMode()">
@@ -95,23 +104,318 @@
 
       </ul>
     </nav>
-  </div>
+  </div> -->
   <!-- End of Mobile Navigation -->
-  <main>
-    <section class="hero container section">
-      <img class="hero__img" src="/public/lawyer logo.png" alt="internationa law firm">
-      <h2 class="hero__subtitle">Hesham Salem</h2>
-      <h1 class="hero__title">international <br> law firm</h1>
-      <p class="hero__desc">We have built a multi‐operational law firm to deal with a wide range of cases. With many
-        years of combined experience, we are well equipped to handle many matters. We cover criminal law, commercial
-        law, Civil low, family law, immigration , international cases and Property Advisor.
 
-        We take pride in our work and always go above and beyond to satisfy our clients, no matter the area of law.
+  <section class="hero container">
+    <img class="hero__img" src="./src/img/lawyer-logo-gold-white.png" alt="internationa law firm">
+    <h2 class="hero__subtitle">Hesham Salem</h2>
 
-        Our team is equipped to address your goals professionally in ever‐changing environments and regulations.</p>
+    <h1 class="hero__title">international <br> law firm</h1>
+    <p class="hero__desc">
+      We have built a multi-operational law firm to deal with
+      a wide range of cases. With many years of combined experience, we are well
+      equipped to handle many matters. We cover Criminal law, Commercial
+      law, Civil low, Family law, Immigration ,International cases and Property
+      Advisor. <br>We take pride in our work and always go above and beyond to satisfy
+      our clients, no matter the area of law. Our team is equipped to address your
+      goals professionally in ever-changing environments and regulations.
+    </p>
+    <div class="hero-details-section"></div>
+  </section>
 
-    </section>
-  </main>
+  <section class="home-practice-area container">
+    <h1 class="home-practice-area-title">Practice Areas</h1>
+    <div class="content">
+      <div class="card" id="Translate" style="order: 20;">
+        <div class="icon"><i class="fa-solid fa-scale-balanced"></i></div>
+        <div class="info">
+          <h3>Legal Translation</h3>
+          <p>
+            explaining or interpreting legal documents, terms, and concepts in a way that is understandable to clients
+            or other non-legal professionals
+          </p>
+        </div>
+      </div>
+      <div class="card" id="Cretify" style="order: 21;">
+        <div class="icon"><i class="fa-solid fa-scale-balanced"></i></div>
+        <div class="info">
+          <h3>Cretify</h3>
+          <p>
+            certify copies of documents for various purposes, such as:</p>
+          <ul>
+            <li>Submitting documents to government agencies or courts</li>
+            <li>Completing legal transactions</li>
+            <li>Providing copies of documents to clients</li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="card" id="Accounting" style="order: 22;">
+        <div class="icon"><i class="fa-solid fa-scale-balanced"></i></div>
+        <div class="info">
+          <h3>Accounting</h3>
+          <p>
+            provide accounting services, they can offer valuable legal services related to accounting matters
+          </p>
+        </div>
+      </div>
+      <div class="card" id="Administrative-Law" style="order: 4;">
+        <div class="icon"><i class="fa-solid fa-scale-balanced"></i></div>
+        <div class="info">
+          <h3>Administrative Law</h3>
+          <p>
+            provide a wide range of services related to the interaction between government agencies and individuals or
+            organizations.
+          </p>
+        </div>
+      </div>
+      <div class="card" id="Capital-Markets-Offerings" style="order: 23;">
+        <div class="icon"><i class="fa-solid fa-scale-balanced"></i></div>
+        <div class="info">
+          <h3>Capital Markets & Offerings</h3>
+          <p>
+            provide a wide range of legal services essential for companies and investors navigating the complexities of
+            raising capital or participating in securities transactions.
+          </p>
+        </div>
+      </div>
+      <div class="card" id="Competition-Law" style="order: 3;">
+        <div class="icon"><i class="fa-solid fa-scale-balanced"></i></div>
+        <div class="info">
+          <h3>Competition Law</h3>
+          <p>
+            offer a wide range of services to businesses and individuals navigating the complex world of antitrust and
+            fair competition regulations.
+          </p>
+
+        </div>
+      </div>
+      <div class="card" id="property-advisor" style="order: 19;">
+        <div class=" icon"><i class="fa-solid fa-scale-balanced"></i></div>
+      <div class="info">
+        <h3>Property Advisor</h3>
+        <p>
+          offer a wide range of legal services crucial for navigating the complex legal landscape of this industry.
+        </p>
+        <ul>
+          <li>Contract Negotiation and Drafting</li>
+          <li>Construction Disputes and Litigation</li>
+          <li>Project Management and Regulatory Compliance</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card" id="Copyrights-Arts-Entertainment" style="order: 14;">
+      <div class="icon"><i class="fa-solid fa-scale-balanced"></i></div>
+      <div class="info">
+        <h3>Copyrights, Arts & Entertainment</h3>
+        <p>
+          offer a diverse range of services crucial for navigating the legal complexities of these creative fields
+        </p>
+        <ul>
+          <li>Copyright Protection and Registration</li>
+          <li>Contract Negotiation and Drafting</li>
+          <li>Business Formation and Legal Structure</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card" id="Corporate-Law-Business-Establishment" style="order: 5;">
+      <div class="icon"><i class="fa-solid fa-scale-balanced"></i></div>
+      <div class="info">
+        <h3>Corporate Law & Business Establishment</h3>
+        <p>
+          offer a wide range of services crucial for entrepreneurs and established businesses alike.
+        </p>
+        <ul>
+          <li>Business Formation and Establishment</li>
+          <li>Corporate Governance and Compliance</li>
+          <li>Mergers and Acquisitions (M&A)</li>
+          <li>Commercial Contracts and Agreements</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card" id="Dispute-Resolution" style="order: 6;">
+      <div class="icon"><i class="fa-solid fa-scale-balanced"></i></div>
+      <div class="info">
+        <h3>Dispute Resolution</h3>
+        <p>
+          offer a diverse range of services to help clients navigate and resolve conflicts efficiently and effectively
+        </p>
+        <ul>
+          <li>Alternative Dispute Resolution (ADR)</li>
+          <li>Litigation</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card" id="Government-Regulatory-Relations" style="order: 7;">
+      <div class="icon"><i class="fa-solid fa-scale-balanced"></i></div>
+      <div class="info">
+        <h3>Government & Regulatory Relations</h3>
+        <p>
+          offer a diverse range of services to assist clients in navigating the complex world of government regulations
+          and interacting effectively with governmental entities.
+        </p>
+      </div>
+    </div>
+    <div class="card" id="Intellectual-Property-Licensing" style="order: 8;">
+      <div class="icon"><i class="fa-solid fa-scale-balanced"></i></div>
+      <div class="info">
+        <h3>Intellectual Property & Licensing</h3>
+        <p>
+          offer a wide range of services to assist clients in effectively managing and leveraging their intellectual
+          property assets through licensing agreements.
+        </p>
+      </div>
+    </div>
+    <div class="card" id="Mergers-Acquisitions" style="order: 9;">
+      <div class="icon"><i class="fa-solid fa-scale-balanced"></i></div>
+      <div class="info">
+        <h3>Mergers & Acquisitions</h3>
+        <p>
+          offer a comprehensive range of services to navigate the complex legal and financial aspects of these
+          transactions.
+        </p>
+        <ul>
+          <li>Strategic Guidance and Planning</li>
+          <li>Transaction Execution</li>
+          <li>Post-Closing Integration</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card" id="Joint-Ventures" style="order: 10;">
+      <div class="icon"><i class="fa-solid fa-scale-balanced"></i></div>
+      <div class="info">
+        <h3>Joint Ventures</h3>
+        <p>
+          Lawyer offices specializing in joint ventures offer a comprehensive range of services to guide you through the
+          legal intricacies of forming and operating a successful joint venture.
+        </p>
+        <ul>
+          <li>Structuring and Formation</li>
+          <li>Governance and Management</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card" id="Pharmaceuticals" style="order: 11;">
+      <div class="icon"><i class="fa-solid fa-scale-balanced"></i></div>
+      <div class="info">
+        <h3>Pharmaceuticals</h3>
+        <p>
+          offer a unique range of services tailored to the highly regulated and complex nature of this field
+        </p>
+        <ul>
+          <li>Regulatory Compliance and Product Development</li>
+          <li>Intellectual Property Protection</li>
+          <li>Commercial Transactions and Agreements</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card" id="Telecommunications-Information-Technology" style="order: 12;">
+      <div class="icon"><i class="fa-solid fa-scale-balanced"></i></div>
+      <div class="info">
+        <h3>Telecommunications & Information Technology</h3>
+        <p>
+          offer a comprehensive range of services to navigate the complex legal and regulatory landscape of these
+          interconnected industries.
+        </p>
+        <ul>
+          <li>Regulatory Compliance and Licensing</li>
+          <li>Technology Transactions and Contracts</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card" id="Arbitration" style="order: 13;">
+      <div class="icon"><i class="fa-solid fa-scale-balanced"></i></div>
+      <div class="info">
+        <h3>Arbitration</h3>
+        <p>
+          Lawyer offices specializing in arbitration offer a valuable range of services to clients involved in dispute resolution through arbitration proceedings.
+        </p>
+
+      </div>
+    </div>
+    <div class="card" id="international-trade" style="order: 15;">
+      <div class="icon"><i class="fa-solid fa-scale-balanced"></i></div>
+      <div class="info">
+        <h3>international trade</h3>
+        <p>
+          offer a range of valuable services to navigate the complex legal landscape of importing and exporting goods across borders.
+        </p>
+
+      </div>
+    </div>
+    <div class="card" id="puplic-funds" style="order: 16;">
+      <div class="icon"><i class="fa-solid fa-scale-balanced"></i></div>
+      <div class="info">
+        <h3>puplic funds</h3>
+        <p>
+          provide a range of valuable services related to public funds, depending on the specific context and the type of public fund involved
+        </p>
+        <ul>
+          <li>Public Fund Formation and Governance</li>
+          <li>Investment Management and Oversight</li>
+          <li>Public Procurement and Contracting</li>
+        </ul>
+
+      </div>
+    </div>
+    <div class="card" id="bankruptcy" style="order: 17;">
+      <div class="icon"><i class="fa-solid fa-scale-balanced"></i></div>
+      <div class="info">
+        <h3>bankruptcy</h3>
+        <p>
+          offer crucial services to individuals and businesses facing financial distress.
+        </p>
+
+      </div>
+    </div>
+    <div class="card" id="Criminal-Law" style="order: 1;">
+      <div class="icon"><i class="fa-solid fa-scale-balanced"></i></div>
+      <div class="info">
+        <h3>Criminal Law</h3>
+        <p>
+          Criminal law offices provide crucial support and representation to individuals facing criminal charges.
+        </p>
+        <ul>
+          <li>Initial Consultation and Legal Advice</li>
+          <li>Investigation and Evidence Gathering</li>
+          <li>Pre-Trial Proceedings and Negotiations</li>
+          <li>Trial Representation and Litigation</li>
+        </ul>
+
+      </div>
+    </div>
+    <div class="card" id="Civil-Law" style="order: 2;">
+      <div class="icon"><i class="fa-solid fa-scale-balanced"></i></div>
+      <div class="info">
+        <h3>Civil Law</h3>
+        <p>
+          Civil law offices offer a wide range of services to individuals and businesses involved in non-criminal legal disputes
+        </p>
+        <ul>
+          <li>Case Evaluation and Strategy Development</li>
+          <li>Pre-Litigation and Dispute Resolution</li>
+          <li>Litigation and Court Representation</li>
+        </ul>
+
+      </div>
+    </div>
+    <div class="card" id="Midical" style="order: 18;">
+      <div class="icon"><i class="fa-solid fa-scale-balanced"></i></div>
+      <div class="info">
+        <h3>Overseas Medical Services</h3>
+        <p>
+          facilitate medical treatment in foreign countries
+        </p>
+
+      </div>
+    </div>
+
+
+    </div>
+
+  </section>
+
   <footer>
     <div class="footer-box">
       <div class="footer-area-top">
@@ -122,11 +426,11 @@
         <ul class="corporate-address">
           <li>
             <i class="fa fa-phone icon_footer" aria-hidden="true"></i>
-            <p>Phone : + (202) 00000000 +(202) 00000000</p>
+            <p>Phone : + (202) 33479973 +(202) 01500094407</p>
           </li>
           <li>
             <i class="fa fa-phone icon_footer" aria-hidden="true"></i>
-            <p>Mob: + (20) 1091262697</p>
+            <p>Mob: + (20) 1500094407</p>
           </li>
           <li>
             <i class="fa fa-envelope-o icon_footer" aria-hidden="true"></i>
@@ -149,18 +453,18 @@
       </div>
     </div>
   </footer>
-  <a id="phone_call" href="tel:+ (20) 1091262697" target="_blank">
+  <a id="phone_call" href="tel:+ (20) 1500094407" target="_blank">
     <i class="fa fa-phone phone_icon"></i>
-    <span>+ (20) 1091262697</span>
-</a>
-<a id="whatsapp_call" href="https://api.whatsapp.com/send?phone=+%20(20)%201091262697&amp;text=Welcome"
+    <span>+ (20) 1500094407</span>
+  </a>
+  <a id="whatsapp_call" href="https://api.whatsapp.com/send?phone=+%20(20)%201500094407&amp;text=Welcome"
     target="_blank">
     <i class="fa fa-whatsapp"></i>
-</a>
-<a id="send_mail" href="mailto:info@international-law-firm.com" target="_blank">
+  </a>
+  <a id="send_mail" href="mailto:info@international-law-firm.com" target="_blank">
     <i class="fa fa-envelope-o"></i>
-    <span>info@international-law-firm.com</span>
-</a>
+
+  </a>
   <script type="module" src="./src/main.js"></script>
 </body>
 

@@ -1,0 +1,35 @@
+.practice-area{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.practice-area-title {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--clr-dark);
+}
+
+
+
+@media (min-width: 250px) {
+    .practice-area{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .practice-area-title {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        color: var(--clr-dark);
+    }
+}
