@@ -34,6 +34,7 @@
   <!-- general styles -->
   <link rel="stylesheet" href="./src/styles/style.css">
   <link rel="stylesheet" href="./src/styles/home-page.css">
+  <link rel="stylesheet" href="./src/styles/component/floating-buttons.css">
 
   <!-- component style -->
   <!-- <link rel="stylesheet" href="./src/styles/component/header.css"> -->
@@ -425,19 +426,19 @@
         </h3>
         <ul class="corporate-address">
           <li>
-            <i class="fa fa-phone icon_footer" aria-hidden="true"></i>
+            <i class="fa fa-phone" aria-hidden="true"></i>
             <p>Phone : + (202) 33479973 +(202) 01500094407</p>
           </li>
           <li>
-            <i class="fa fa-phone icon_footer" aria-hidden="true"></i>
+            <i class="fa fa-phone" aria-hidden="true"></i>
             <p>Mob: + (20) 1500094407</p>
           </li>
           <li>
-            <i class="fa fa-envelope-o icon_footer" aria-hidden="true"></i>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
             <p>info@international-law-firm.com</p>
           </li>
           <li>
-            <i class="fa fa-map-marker icon_footer" aria-hidden="true"></i>
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
             <p>
               (Head quarter) Gamet El Dewal, Mohandseen, Cairo.
             </p>
@@ -447,24 +448,35 @@
       </div>
       <div class="footer-area-bottom">
 
-        <p>@ 2024 International Law Firm. All rights reserved. Designed by <a href="">Ahmed Salem</a>
+        <p>@ 2024 International Law Firm. All rights reserved.<br> Designed by <a href="">Ahmed Salem</a>
         </p>
 
       </div>
     </div>
   </footer>
-  <a id="phone_call" href="tel:+ (20) 1500094407" target="_blank">
-    <i class="fa fa-phone phone_icon"></i>
-    <span>+ (20) 1500094407</span>
-  </a>
-  <a id="whatsapp_call" href="https://api.whatsapp.com/send?phone=+%20(20)%201500094407&amp;text=Welcome"
-    target="_blank">
-    <i class="fa fa-whatsapp"></i>
-  </a>
-  <a id="send_mail" href="mailto:info@international-law-firm.com" target="_blank">
-    <i class="fa fa-envelope-o"></i>
 
-  </a>
+
+
+
+  <div id="whatsapp" class="floating-button">
+    <a href="https://api.whatsapp.com/send?phone=+%20(20)%201500094407&amp;text=Welcome">
+      <i class="fa fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <div id="phone" class="floating-button">
+    <a href="tel:+(20)1500094407">
+    <i class="fa fa fa-phone"></i>
+      <!-- <span>+(20)1500094407</span> -->
+    </a>
+  </div>
+
+  <div id="mail" class="floating-button">
+    <a href="mailto:info@international-law-firm.com">
+    <i class="fa fa-envelope-o"></i></a>
+  </div>
+
+
   <script type="module" src="./src/main.js"></script>
 </body>
 

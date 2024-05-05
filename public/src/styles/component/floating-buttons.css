@@ -1,0 +1,45 @@
+.floating-button{
+    position: fixed;
+    border-radius: 50%;
+    z-index: 10
+}
+.floating-button a{
+    display: block;
+    color: #fff;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    align-content: center;
+}
+
+.floating-button#whatsapp{
+    background: #08f210;
+    font-size: 2em;
+    right: 30px;
+    bottom: 120px;
+}
+
+.floating-button#phone{
+    direction: ltr;
+    background: var(--clr-gold);
+    font-size: 2em;
+    right: 30px;
+    bottom: 70px;
+    -webkit-transition: flex .3s ease-out;
+    transition: flex .3s ease-out;
+    overflow: hidden;
+}
+/* .floating-button#phone:hover{
+    width: auto;
+    max-width: 1000px;
+    border-radius: 100px;
+    padding: 8px;
+    flex: 1
+} */
+
+.floating-button#mail{
+    background: var(--clr-gold);
+    font-size: 2em;
+    right: 30px;
+    bottom: 20px;
+}

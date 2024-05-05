@@ -135,19 +135,17 @@ strong {
     padding-bottom: 4px;
 }
 
-.footer_icon {
-    margin-top: 0;
-}
-
 .title-bar-footer {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    color: var(--clr-dark);
-}
-
-.footer-area-bottom {
     color: var(--clr-light);
 }
+
+
+
+
+
+
 
 .corporate-address {
     margin-bottom: 20px;
@@ -164,7 +162,12 @@ strong {
     justify-content: center;
 }
 
+
+
 .corporate-address li i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
@@ -192,26 +195,8 @@ strong {
     margin-bottom: 0;
 }
 
-.btn {
-    display: inline-block;
-    font-weight: 600;
-    text-decoration: none;
-    letter-spacing: -0.05em;
-    background-color: var(--clr-rose);
-    color: var(--clr-lighr);
-    padding: 0.5em 1em;
-    border-radius: 6px;
-    box-shadow: 0 10px 20px rgba(225, 29, 72, 0.5), 
-    0 6px 6px rgba(225, 29, 72 , 0.5),
-    0 0 100px -10px var(--clr-rose);
-    transition:  0.3s;
-}
-
-.btn:hover{
-    transform: translateY(-3px);
-    box-shadow: 0 14px 28px rgba(225, 29, 72, 0.25), 
-    0 10px 10px rgba(225, 29, 72 , 0.252),
-    0 0 120px -10px var(--clr-rose);
+.footer-area-bottom {
+    color: var(--clr-light);
 }
 
 .container{
@@ -223,68 +208,8 @@ strong {
     
 }
 
-a#phone_call {
-    direction: ltr;
-    position: fixed;
-    background: var(--clr-gold);
-    width: 50px;
-    height: 50px;
-    right: 20px;
-    bottom: 165px;
-    border-radius: 50px;
-    font-size: 28px;
-    color: #fff;
-    text-align: center;
-    padding: 5px;
-    -webkit-transition: flex .3s ease-out;
-    transition: flex .3s ease-out;
-    overflow: hidden;
-    flex: 0;
-    z-index: 10
-}
 
-a#phone_call:hover {
-    width: auto;
-    max-width: 1000px;
-    border-radius: 100px;
-    padding: 8px 20px;
-    flex: 1
-}
 
-a#send_mail {
-    direction: ltr;
-    position: fixed;
-    background: var(--clr-gold);
-    width: 50px;
-    height: 50px;
-    right: 20px;
-    bottom: 90px;
-    border-radius: 100px;
-    font-size: 30px;
-    color: #fff;
-    text-align: center;
-    padding: 8px;
-    -webkit-transition: flex .3s ease-out;
-    transition: flex .3s ease-out;
-    overflow: hidden;
-    flex: 0;
-    z-index: 10
-}
-
-a#whatsapp_call {
-    position: fixed;
-    background: #4caf50;
-    width: 50px;
-    height: 50px;
-    right: 20px;
-    bottom: 15px;
-    border-radius: 50%;
-    font-size: 30px;
-    color: #fff;
-    text-align: center;
-    padding: 8px;
-    z-index: 10
-}
 
 /*below*/
 @media (min-width: 250px) {
@@ -293,44 +218,14 @@ a#whatsapp_call {
     }
 
     .navigaton-item-home{
-        font-weight: 600;
-        font-size: 0.5em;
-        margin-left: 0.5rem;
+        font-weight: 500;
+        font-size: 1em;
+        margin-left: 1rem;
     }
 
     .logo{
-        width: 50px;
+        width: 100px;
     }
-
-    a#phone_call{
-        width: 20px;
-        height: 20px;
-        font-size: 10px;
-        right: 20px;
-        bottom: 65px;
-    }
-    a#phone_call:hover {
-        width: auto;
-        max-width: 1000px;
-        border-radius: 100px;
-        padding: 8px 20px;
-        flex: 1
-    }
-
-    a#send_mail{
-        width: 20px;
-        height: 20px;
-        font-size: 8px;
-        bottom: 40px;
-    }
-
-    a#whatsapp_call{
-        width: 20px;
-        height: 20px;
-        font-size: 8px;
-        bottom: 15px;
-    }
-
 
     .footer-box {
         text-align: start;
@@ -356,11 +251,18 @@ a#whatsapp_call {
     .title-bar-footer {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
-        color: var(--clr-dark);
+        font-size: 1em;
+        color: var(--clr-light);
     }
 
-    .title-bar-footer h3{
-        font-size: 1em;
+    .corporate-address li i{
+        font-size: 10px;
+        height: 20px;
+        width: 20px;
+    }
+
+    .corporate-address li p{
+        font-size: 0.6em;
     }
     
     .footer-area-bottom {
@@ -368,8 +270,11 @@ a#whatsapp_call {
     }
 
     .footer-area-bottom p{
-        font-size: 1em;
+        font-size: 0.7em;
+        text-align: center;
     }
+
+
 
 }
  /*xs*/
@@ -382,6 +287,16 @@ a#whatsapp_call {
     .container {
         max-width: 475px;
     }
+
+    .navigaton-item-home{
+        font-weight: 600;
+        font-size: 1em;
+        margin-left: 1rem;
+    }
+
+    .logo{
+        width: 100px;
+    }
 }
  /*xs*/
 
@@ -393,6 +308,16 @@ a#whatsapp_call {
     .container {
         max-width: 640px;
     }
+
+    .navigaton-item-home{
+        font-weight: 600;
+        font-size: 1.5em;
+        margin-left: 1rem;
+    }
+
+    .logo{
+        width: 100px;
+    }
  }
 /* sm */
 
@@ -403,6 +328,16 @@ a#whatsapp_call {
     }
     .container {
         max-width: 768px;
+    }
+
+    .navigaton-item-home{
+        font-weight: 600;
+        font-size: 1.5em;
+        margin-left: 1rem;
+    }
+
+    .logo{
+        width: 100px;
     }
 }
 /*md*/
@@ -418,6 +353,16 @@ a#whatsapp_call {
     .section{
         margin-top: 5rem;
     }
+
+    .navigaton-item-home{
+        font-weight: 600;
+        font-size: 1.5em;
+        margin-left: 1rem;
+    }
+
+    .logo{
+        width: 100px;
+    }
 }
 /*lg*/
 
@@ -425,6 +370,16 @@ a#whatsapp_call {
 @media (min-width: 1288px){
     .container {
         max-width: 1288px;
+    }
+
+    .navigaton-item-home{
+        font-weight: 600;
+        font-size: 1.5em;
+        margin-left: 1rem;
+    }
+
+    .logo{
+        width: 100px;
     }
 }
 
